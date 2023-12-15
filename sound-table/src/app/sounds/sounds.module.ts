@@ -7,6 +7,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
+import {PlayComponent} from "../play/play.component";
 
 @NgModule({
   imports: [
@@ -17,9 +18,9 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    NgOptimizedImage
+    NgOptimizedImage,
   ],
-  declarations: [SoundsComponent],
+  declarations: [SoundsComponent, PlayComponent],
   exports: [SoundsComponent]
 })
 export class SoundsModule {}

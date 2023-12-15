@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnChanges, OnInit, SimpleChanges} from "@angular/core";
 import {SoundInterfaces} from "../core/interfaces/sound.interfaces";
 
 @Component({
@@ -19,11 +19,13 @@ export class SoundsComponent implements OnInit {
     {id: 3, name: 'Kombinacija', link: 'kombinacija-ne-zabyvaj.mp3'},
     {id: 4, name: 'Xolidayboy', link: 'xolidayboy-moja-huliganka.mp3'},
     ];
-   console.log(this.dataSource[0].link)
+   //console.log(this.dataSource[0].link)
   }
 
-  onPlay(element.link) {
-    this.value =  this.dataSource[element].link
+  onPlay(event: any) {
+    this.value = event.target.firstChild.data
+    console.log(event.target.firstChild.data)
   }
+
 
 }
