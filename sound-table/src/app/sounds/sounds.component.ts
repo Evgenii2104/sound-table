@@ -22,9 +22,8 @@ export class SoundsComponent implements OnInit {
    console.log(this.dataSource[0].link)
   }
 
-  onPlay(event: any) {
-    this.value = event.target.firstChild.data
-    console.log(event.target.firstChild.data)
+  onPlay(element.link) {
+    this.value =  this.dataSource[element].link
   }
 
 }
