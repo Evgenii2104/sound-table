@@ -1,5 +1,6 @@
 import {Component, OnChanges, OnInit, SimpleChanges} from "@angular/core";
 import {SoundInterfaces} from "../core/interfaces/sound.interfaces";
+import {elementAt} from "rxjs";
 
 @Component({
   selector: 'mc-sounds',
@@ -19,13 +20,9 @@ export class SoundsComponent implements OnInit {
     {id: 3, name: 'Kombinacija', link: 'kombinacija-ne-zabyvaj.mp3'},
     {id: 4, name: 'Xolidayboy', link: 'xolidayboy-moja-huliganka.mp3'},
     ];
-   //console.log(this.dataSource[0].link)
   }
 
   onPlay(event: any) {
     this.value = event.target.firstChild.data
-    console.log(event.target.firstChild.data)
   }
-
-
 }

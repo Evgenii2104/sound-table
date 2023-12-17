@@ -19,7 +19,7 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<mc-play [value]="value"></mc-play>
+<mc-play *ngIf="value !== undefined" [value]="value"></mc-play>
 
 
 
